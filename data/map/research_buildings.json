@@ -1,0 +1,316 @@
+[
+ {
+  "name": "建工楼",
+  "legend_no": 32,
+  "map_marker_px": [
+   803,
+   680
+  ],
+  "lat": 41.62402,
+  "lng": 123.52716,
+  "coord_method": "OSM building polygon centroid (matches user map marker position)",
+  "area_description": "西校区，绿岛湖西北方向；位于传媒楼东北、医工楼东侧，金菊园(6/7号公寓)西侧",
+  "neighbors": [
+   "医工楼",
+   "传媒楼",
+   "金菊园社区(6、7号公寓)",
+   "金栎园社区",
+   "西山会所"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885130",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/jjysq/",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/jlysq/"
+  ],
+  "confidence": "high",
+  "walk_est_straight_line_80m_per_min": {
+   "医工楼": "53 m / ~1 min",
+   "机电楼": "463 m / ~6 min",
+   "经管楼": "150 m / ~2 min",
+   "西山会所": "191 m / ~2 min",
+   "绿岛俱乐部": "523 m / ~7 min",
+   "传媒楼": "79 m / ~1 min",
+   "南楼": "676 m / ~8 min",
+   "医科楼": "246 m / ~3 min"
+  }
+ },
+ {
+  "name": "医工楼",
+  "legend_no": 81,
+  "map_marker_px": [
+   717,
+   662
+  ],
+  "lat": 41.62406,
+  "lng": 123.52652,
+  "coord_method": "estimated: OSM position of nearby 建工楼 + map pixel offset converted with affine fit to 17 OSM landmarks (fit error ~36 m median, up to ~100 m)",
+  "area_description": "西校区北部，建工楼西侧（地图上两楼相邻），棒球俱乐部东南、金栎园社区东侧",
+  "neighbors": [
+   "建工楼",
+   "传媒楼",
+   "棒球俱乐部",
+   "金栎园社区(26号公寓等)"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/jlysq/"
+  ],
+  "confidence": "medium (position on map certain; coordinates approximate)",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "53 m / ~1 min",
+   "机电楼": "482 m / ~6 min",
+   "经管楼": "148 m / ~2 min",
+   "西山会所": "239 m / ~3 min",
+   "绿岛俱乐部": "573 m / ~7 min",
+   "传媒楼": "99 m / ~1 min",
+   "南楼": "719 m / ~9 min",
+   "医科楼": "195 m / ~2 min"
+  }
+ },
+ {
+  "name": "机电楼",
+  "legend_no": 41,
+  "map_marker_px": [
+   822,
+   1077
+  ],
+  "lat": 41.61995,
+  "lng": 123.52833,
+  "coord_method": "OSM building polygon centroid (matches user map marker position)",
+  "area_description": "校园西南部，绿岛湖西南；圆环形“齿轮楼”，在田径场东侧、玫瑰园(11/12/13号公寓)北侧",
+  "neighbors": [
+   "田径场",
+   "玫瑰园社区",
+   "水晶宫(图书馆)",
+   "绿岛讲堂",
+   "体育馆"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885114",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/mgysq/",
+   "https://www.shenyangcu.edu.cn/gywm/xydt/202207/t20220704_42715.html"
+  ],
+  "confidence": "high",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "463 m / ~6 min",
+   "医工楼": "482 m / ~6 min",
+   "经管楼": "340 m / ~4 min",
+   "西山会所": "353 m / ~4 min",
+   "绿岛俱乐部": "721 m / ~9 min",
+   "传媒楼": "387 m / ~5 min",
+   "南楼": "391 m / ~5 min",
+   "医科楼": "529 m / ~7 min"
+  }
+ },
+ {
+  "name": "经管楼",
+  "legend_no": 34,
+  "map_marker_px": [
+   687,
+   787
+  ],
+  "lat": 41.62273,
+  "lng": 123.52664,
+  "coord_method": "OSM building polygon centroid (matches user map marker position)",
+  "area_description": "西校区，传媒楼西南方向，白桦园社区(9/10号公寓)北侧",
+  "neighbors": [
+   "传媒楼",
+   "白桦园社区(9、10号公寓)",
+   "体育馆",
+   "大创工场"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885132",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/bhysq/"
+  ],
+  "confidence": "high",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "150 m / ~2 min",
+   "医工楼": "148 m / ~2 min",
+   "机电楼": "340 m / ~4 min",
+   "西山会所": "206 m / ~3 min",
+   "绿岛俱乐部": "617 m / ~8 min",
+   "传媒楼": "78 m / ~1 min",
+   "南楼": "623 m / ~8 min",
+   "医科楼": "220 m / ~3 min"
+  }
+ },
+ {
+  "name": "西山会所",
+  "legend_no": 30,
+  "map_marker_px": [
+   997,
+   773
+  ],
+  "lat": 41.62307,
+  "lng": 123.52907,
+  "coord_method": "estimated: OSM position of nearby 绿岛讲堂 + map pixel offset converted with affine fit to 17 OSM landmarks (fit error ~36 m median, up to ~100 m); OSM 二期食堂 (41.62307,123.52891) is likely the same building (inferred)",
+  "area_description": "西校区，金菊园与白桦园交界处，绿岛讲堂以北、传媒楼东侧，靠近绿岛湖西岸（餐厅/美食广场）",
+  "neighbors": [
+   "金菊园社区",
+   "白桦园社区",
+   "传媒楼",
+   "建工楼",
+   "绿岛讲堂"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885124",
+   "https://www.shenyangcu.edu.cn/xysh/ldms/xshs/"
+  ],
+  "confidence": "medium (position on map certain; coordinates approximate)",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "191 m / ~2 min",
+   "医工楼": "239 m / ~3 min",
+   "机电楼": "353 m / ~4 min",
+   "经管楼": "206 m / ~3 min",
+   "绿岛俱乐部": "425 m / ~5 min",
+   "传媒楼": "161 m / ~2 min",
+   "南楼": "490 m / ~6 min",
+   "医科楼": "405 m / ~5 min"
+  }
+ },
+ {
+  "name": "绿岛俱乐部",
+  "legend_no": 2,
+  "map_marker_px": [
+   1526,
+   648
+  ],
+  "lat": 41.62531,
+  "lng": 123.5332,
+  "coord_method": "estimated: OSM position of nearby 青苹果书屋 + map pixel offset converted with affine fit to 17 OSM landmarks (fit error ~36 m median, up to ~100 m); OSM 一期食堂 (41.62549,123.53359) is likely the same building (inferred)",
+  "area_description": "北校区东北部，园中园荷塘(东湖)旁，紧邻苹果书屋，靠近五星广场与校园大门（大食堂）",
+  "neighbors": [
+   "苹果书屋",
+   "东湖",
+   "园中园社区",
+   "五星广场",
+   "橄榄球场"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885107",
+   "https://www.shenyangcu.edu.cn/xysh/ldms/ldjlb/"
+  ],
+  "confidence": "medium (position on map certain; coordinates approximate)",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "523 m / ~7 min",
+   "医工楼": "573 m / ~7 min",
+   "机电楼": "721 m / ~9 min",
+   "经管楼": "617 m / ~8 min",
+   "西山会所": "425 m / ~5 min",
+   "传媒楼": "550 m / ~7 min",
+   "南楼": "612 m / ~8 min",
+   "医科楼": "768 m / ~10 min"
+  }
+ },
+ {
+  "name": "传媒楼",
+  "legend_no": 33,
+  "map_marker_px": [
+   745,
+   734
+  ],
+  "lat": 41.62331,
+  "lng": 123.52716,
+  "coord_method": "OSM building polygon centroid (matches user map marker position)",
+  "area_description": "西校区，建工楼与经管楼之间（三楼大致呈东北—西南一线排列）",
+  "neighbors": [
+   "建工楼",
+   "经管楼",
+   "西山会所",
+   "白桦园社区",
+   "金栎园社区"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885127",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/jlysq/",
+   "https://www.shenyangcu.edu.cn/xysh/ldms/700ccncd/"
+  ],
+  "confidence": "high",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "79 m / ~1 min",
+   "医工楼": "99 m / ~1 min",
+   "机电楼": "386 m / ~5 min",
+   "经管楼": "78 m / ~1 min",
+   "西山会所": "161 m / ~2 min",
+   "绿岛俱乐部": "550 m / ~7 min",
+   "南楼": "624 m / ~8 min",
+   "医科楼": "243 m / ~3 min"
+  }
+ },
+ {
+  "name": "南楼",
+  "legend_no": 59,
+  "map_marker_px": [
+   1514,
+   1145
+  ],
+  "lat": 41.61981,
+  "lng": 123.53302,
+  "coord_method": "OSM building polygon centroid (matches user map marker position)",
+  "area_description": "南校区东南部，绿岛湖东南；酒店管理学院教学/实训楼，内有芙蓉餐厅、百荷咖啡",
+  "neighbors": [
+   "校训塔",
+   "百荷园社区(15/16/17号公寓)",
+   "排球场",
+   "足球场",
+   "高尔夫练习场"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.openstreetmap.org/way/570885187",
+   "https://www.shenyangcu.edu.cn/xysh/ldms/frct/",
+   "https://www.shenyangcu.edu.cn/xysh/ldms/bhkf/"
+  ],
+  "confidence": "high",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "676 m / ~8 min",
+   "医工楼": "719 m / ~9 min",
+   "机电楼": "391 m / ~5 min",
+   "经管楼": "623 m / ~8 min",
+   "西山会所": "490 m / ~6 min",
+   "绿岛俱乐部": "612 m / ~8 min",
+   "传媒楼": "624 m / ~8 min",
+   "医科楼": "842 m / ~11 min"
+  }
+ },
+ {
+  "name": "医科楼",
+  "legend_no": 90,
+  "map_marker_px": [
+   370,
+   648
+  ],
+  "lat": 41.6236,
+  "lng": 123.52426,
+  "coord_method": "estimated: OSM position of nearby 经管楼 + map pixel offset converted with affine fit to 17 OSM landmarks (fit error ~36 m median, up to ~100 m)",
+  "area_description": "西校区最西端，紫薇园社区(30-33号公寓)南侧，生物工程中心旁",
+  "neighbors": [
+   "生物工程中心",
+   "紫薇园社区",
+   "三十三号公寓",
+   "棒球场"
+  ],
+  "source": [
+   "campus_map_user.png (official bird's-eye map, user-provided)",
+   "https://www.shenyangcu.edu.cn/xysh/sqzj/zwysq/"
+  ],
+  "confidence": "medium (position on map certain; coordinates approximate)",
+  "walk_est_straight_line_80m_per_min": {
+   "建工楼": "246 m / ~3 min",
+   "医工楼": "195 m / ~2 min",
+   "机电楼": "529 m / ~7 min",
+   "经管楼": "220 m / ~3 min",
+   "西山会所": "405 m / ~5 min",
+   "绿岛俱乐部": "768 m / ~10 min",
+   "传媒楼": "243 m / ~3 min",
+   "南楼": "842 m / ~11 min"
+  }
+ }
+]

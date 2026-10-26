@@ -1,0 +1,922 @@
+{
+ "_说明": "依据学校官方鸟瞰图（data/map/campus_map_official.png，96 个图例）、OpenStreetMap 与学校官网整理。沈阳城市学院为单一校园（沈阳市苏家屯区梧桐大街2号），“北/西/南校区”为校园内片区。坐标标注“待核实”者为地图像素换算估算；步行时间为直线距离按80米/分钟估算，实际路线更长。zone_source：official=官网列出，inferred/map=依地图位置推断。",
+ "campus": {
+  "name": "沈阳城市学院",
+  "address": "沈阳市苏家屯区梧桐大街2号",
+  "center": [
+   41.6239,
+   123.5306
+  ],
+  "map_image": "/static/campus_map.jpg",
+  "map_size_px": [
+   1992,
+   1377
+  ],
+  "zones": {
+   "北校区": "园中园、梧桐园、白卿宫、宏志楼等（东北部）",
+   "西校区": "建工楼、医工楼、传媒楼、经管楼、西山会所及金菊园、白桦园、金栎园、紫薇园",
+   "南校区": "南楼、百荷园、绿岛传媒中心（湖南岸/东南部）"
+  },
+  "gate_note": "地图 1 号“校园大门”在校园东侧（沈本产业大道/304国道一侧）；其他校门情况未知，待核实。"
+ },
+ "walk_speed_m_per_min": 80,
+ "route_landmarks": [
+  "水晶宫",
+  "绿岛湖",
+  "体育馆",
+  "五星广场",
+  "绿岛讲堂",
+  "田径场",
+  "校训塔",
+  "凯旋门",
+  "东湖",
+  "宏志楼",
+  "金菊园社区",
+  "白桦园社区"
+ ],
+ "places": [
+  {
+   "name": "建工楼",
+   "legend_no": 32,
+   "type": "教学楼",
+   "aliases": [
+    "建工"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.62402,
+   "lng": 123.52716,
+   "map_px": [
+    803,
+    680
+   ],
+   "coord_status": "较可靠（OSM 建筑中心）",
+   "area": "西校区，绿岛湖西北方向；位于传媒楼东北、医工楼东侧，金菊园(6/7号公寓)西侧",
+   "neighbors": [
+    "医工楼",
+    "传媒楼",
+    "金菊园社区(6、7号公寓)",
+    "金栎园社区",
+    "西山会所"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "医工楼",
+   "legend_no": 81,
+   "type": "教学楼",
+   "aliases": [
+    "医工"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.62406,
+   "lng": 123.52652,
+   "map_px": [
+    717,
+    662
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "西校区北部，建工楼西侧（地图上两楼相邻），棒球俱乐部东南、金栎园社区东侧",
+   "neighbors": [
+    "建工楼",
+    "传媒楼",
+    "棒球俱乐部",
+    "金栎园社区(26号公寓等)"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "机电楼",
+   "legend_no": 41,
+   "type": "教学楼（圆环形“齿轮楼”）",
+   "aliases": [
+    "机电",
+    "齿轮楼"
+   ],
+   "zone": "南校区",
+   "zone_source": "inferred",
+   "lat": 41.61995,
+   "lng": 123.52833,
+   "map_px": [
+    822,
+    1077
+   ],
+   "coord_status": "较可靠（OSM 建筑中心）",
+   "area": "校园西南部，绿岛湖西南；圆环形“齿轮楼”，在田径场东侧、玫瑰园(11/12/13号公寓)北侧",
+   "neighbors": [
+    "田径场",
+    "玫瑰园社区",
+    "水晶宫(图书馆)",
+    "绿岛讲堂",
+    "体育馆"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "经管楼",
+   "legend_no": 34,
+   "type": "教学楼",
+   "aliases": [
+    "经管"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.62273,
+   "lng": 123.52664,
+   "map_px": [
+    687,
+    787
+   ],
+   "coord_status": "较可靠（OSM 建筑中心）",
+   "area": "西校区，传媒楼西南方向，白桦园社区(9/10号公寓)北侧",
+   "neighbors": [
+    "传媒楼",
+    "白桦园社区(9、10号公寓)",
+    "体育馆",
+    "大创工场"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "西山会所",
+   "legend_no": 30,
+   "type": "食堂（已确认；也可作活动场地）",
+   "aliases": [
+    "西山",
+    "西山食堂"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.62307,
+   "lng": 123.52907,
+   "map_px": [
+    997,
+    773
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "西校区，金菊园与白桦园交界处，绿岛讲堂以北、传媒楼东侧，靠近绿岛湖西岸（餐厅/美食广场）",
+   "neighbors": [
+    "金菊园社区",
+    "白桦园社区",
+    "传媒楼",
+    "建工楼",
+    "绿岛讲堂"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "绿岛俱乐部",
+   "legend_no": 2,
+   "type": "食堂（已确认；也可作活动场地）",
+   "aliases": [
+    "绿岛俱乐部食堂"
+   ],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.62531,
+   "lng": 123.5332,
+   "map_px": [
+    1526,
+    648
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "北校区东北部，园中园荷塘(东湖)旁，紧邻苹果书屋，靠近五星广场与校园大门（大食堂）",
+   "neighbors": [
+    "苹果书屋",
+    "东湖",
+    "园中园社区",
+    "五星广场",
+    "橄榄球场"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "传媒楼",
+   "legend_no": 33,
+   "type": "教学楼",
+   "aliases": [
+    "传媒"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.62331,
+   "lng": 123.52716,
+   "map_px": [
+    745,
+    734
+   ],
+   "coord_status": "较可靠（OSM 建筑中心）",
+   "area": "西校区，建工楼与经管楼之间（三楼大致呈东北—西南一线排列）",
+   "neighbors": [
+    "建工楼",
+    "经管楼",
+    "西山会所",
+    "白桦园社区",
+    "金栎园社区"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "南楼",
+   "legend_no": 59,
+   "type": "教学/实训楼（内有芙蓉餐厅、百荷咖啡）",
+   "aliases": [],
+   "zone": "南校区",
+   "zone_source": "official",
+   "lat": 41.61981,
+   "lng": 123.53302,
+   "map_px": [
+    1514,
+    1145
+   ],
+   "coord_status": "较可靠（OSM 建筑中心）",
+   "area": "南校区东南部，绿岛湖东南；酒店管理学院教学/实训楼，内有芙蓉餐厅、百荷咖啡",
+   "neighbors": [
+    "校训塔",
+    "百荷园社区(15/16/17号公寓)",
+    "排球场",
+    "足球场",
+    "高尔夫练习场"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "医科楼",
+   "legend_no": 90,
+   "type": "教学楼",
+   "aliases": [
+    "医科"
+   ],
+   "zone": "西校区",
+   "zone_source": "inferred",
+   "lat": 41.6236,
+   "lng": 123.52426,
+   "map_px": [
+    370,
+    648
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "西校区最西端，紫薇园社区(30-33号公寓)南侧，生物工程中心旁",
+   "neighbors": [
+    "生物工程中心",
+    "紫薇园社区",
+    "三十三号公寓",
+    "棒球场"
+   ],
+   "is_core_building": true
+  },
+  {
+   "name": "校园大门",
+   "legend_no": 1,
+   "type": "校门",
+   "aliases": [
+    "大门",
+    "校门",
+    "正门",
+    "东门"
+   ],
+   "zone": "东侧",
+   "zone_source": "map",
+   "lat": 41.623689,
+   "lng": 123.533626,
+   "map_px": [
+    1614,
+    836
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "水晶宫",
+   "legend_no": 65,
+   "type": "图书馆",
+   "aliases": [
+    "图书馆",
+    "水晶宫图书馆"
+   ],
+   "zone": "湖区（绿岛湖西岸）",
+   "zone_source": "map",
+   "lat": 41.621499,
+   "lng": 123.529732,
+   "map_px": [
+    1069,
+    973
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "苹果书屋",
+   "legend_no": 16,
+   "type": "图书馆/书屋",
+   "aliases": [
+    "青苹果书屋",
+    "书屋"
+   ],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.624922,
+   "lng": 123.532307,
+   "map_px": [
+    1444,
+    683
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "梨苑咖啡",
+   "legend_no": 13,
+   "type": "餐厅/咖啡",
+   "aliases": [
+    "梨苑",
+    "梨苑餐厅"
+   ],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.625953,
+   "lng": 123.530786,
+   "map_px": [
+    1245,
+    546
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "体育馆",
+   "legend_no": 39,
+   "type": "体育场馆",
+   "aliases": [
+    "体育场馆"
+   ],
+   "zone": "西校区",
+   "zone_source": "inferred",
+   "lat": 41.621518,
+   "lng": 123.527087,
+   "map_px": [
+    710,
+    914
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "田径场",
+   "legend_no": 64,
+   "type": "运动场",
+   "aliases": [
+    "操场",
+    "田径场"
+   ],
+   "zone": "西南部",
+   "zone_source": "map",
+   "lat": 41.620566,
+   "lng": 123.527404,
+   "map_px": [
+    746,
+    1017
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "足球场",
+   "legend_no": 61,
+   "type": "运动场",
+   "aliases": [],
+   "zone": "东南部",
+   "zone_source": "map",
+   "lat": 41.622134,
+   "lng": 123.533159,
+   "map_px": [
+    1539,
+    983
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "绿岛湖",
+   "legend_no": 66,
+   "type": "湖",
+   "aliases": [
+    "湖",
+    "绿岛湖边"
+   ],
+   "zone": "校园中部",
+   "zone_source": "map",
+   "lat": 41.622024,
+   "lng": 123.530749,
+   "map_px": [
+    1211,
+    942
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "东湖",
+   "legend_no": 69,
+   "type": "湖",
+   "aliases": [
+    "荷塘"
+   ],
+   "zone": "北校区",
+   "zone_source": "map",
+   "lat": 41.625803,
+   "lng": 123.532444,
+   "map_px": [
+    1469,
+    597
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "绿岛讲堂",
+   "legend_no": 40,
+   "type": "讲堂/活动场所",
+   "aliases": [
+    "讲堂"
+   ],
+   "zone": "西校区",
+   "zone_source": "inferred",
+   "lat": 41.622279,
+   "lng": 123.528379,
+   "map_px": [
+    891,
+    865
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "绿岛会议中心",
+   "legend_no": 49,
+   "type": "会议/活动场所",
+   "aliases": [
+    "会议中心"
+   ],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.626628,
+   "lng": 123.530749,
+   "map_px": [
+    1245,
+    477
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "五星广场",
+   "legend_no": 63,
+   "type": "广场",
+   "aliases": [],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.625249,
+   "lng": 123.531892,
+   "map_px": [
+    1390,
+    641
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "校训塔",
+   "legend_no": 58,
+   "type": "地标",
+   "aliases": [],
+   "zone": "南校区",
+   "zone_source": "inferred",
+   "lat": 41.619963,
+   "lng": 123.532916,
+   "map_px": [
+    1490,
+    1197
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "凯旋门",
+   "legend_no": 27,
+   "type": "地标",
+   "aliases": [],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.62434,
+   "lng": 123.530977,
+   "map_px": [
+    1259,
+    713
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "宏志楼",
+   "legend_no": 25,
+   "type": "办公/教学楼",
+   "aliases": [],
+   "zone": "北校区",
+   "zone_source": "official",
+   "lat": 41.624825,
+   "lng": 123.53056,
+   "map_px": [
+    1206,
+    655
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "白卿宫",
+   "legend_no": 15,
+   "type": "办公/活动楼",
+   "aliases": [],
+   "zone": "北校区",
+   "zone_source": "official",
+   "lat": 41.625692,
+   "lng": 123.531603,
+   "map_px": [
+    1354,
+    590
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "教务处",
+   "legend_no": 20,
+   "type": "行政办公",
+   "aliases": [],
+   "zone": "北校区",
+   "zone_source": "inferred",
+   "lat": 41.625304,
+   "lng": 123.530762,
+   "map_px": [
+    1237,
+    611
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "学生处",
+   "legend_no": 70,
+   "type": "行政办公",
+   "aliases": [],
+   "zone": "西校区",
+   "zone_source": "inferred",
+   "lat": 41.624355,
+   "lng": 123.529842,
+   "map_px": [
+    1105,
+    687
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "校团委",
+   "legend_no": 72,
+   "type": "行政办公",
+   "aliases": [
+    "团委"
+   ],
+   "zone": "西校区",
+   "zone_source": "inferred",
+   "lat": 41.624478,
+   "lng": 123.529585,
+   "map_px": [
+    1071,
+    669
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "大创工场",
+   "legend_no": 38,
+   "type": "创新创业",
+   "aliases": [
+    "大学生创业服务中心"
+   ],
+   "zone": "西校区",
+   "zone_source": "inferred",
+   "lat": 41.620613,
+   "lng": 123.52559,
+   "map_px": [
+    500,
+    973
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "传媒中心",
+   "legend_no": 53,
+   "type": "传媒中心",
+   "aliases": [
+    "绿岛传媒中心"
+   ],
+   "zone": "南校区",
+   "zone_source": "official",
+   "lat": 41.619609,
+   "lng": 123.530431,
+   "map_px": [
+    1150,
+    1179
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "园中园社区",
+   "legend_no": 3,
+   "type": "宿舍社区",
+   "aliases": [
+    "园中园"
+   ],
+   "zone": "北校区",
+   "zone_source": "official",
+   "lat": 41.626244,
+   "lng": 123.531823,
+   "map_px": [
+    1388,
+    539
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "梧桐园社区",
+   "legend_no": 18,
+   "type": "宿舍社区",
+   "aliases": [
+    "梧桐园"
+   ],
+   "zone": "北校区",
+   "zone_source": "official",
+   "lat": 41.625597,
+   "lng": 123.530511,
+   "map_px": [
+    1205,
+    576
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "金菊园社区",
+   "legend_no": 75,
+   "type": "宿舍社区",
+   "aliases": [
+    "金菊园"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.624284,
+   "lng": 123.529094,
+   "map_px": [
+    1003,
+    678
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "白桦园社区",
+   "legend_no": 37,
+   "type": "宿舍社区",
+   "aliases": [
+    "白桦园"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.621672,
+   "lng": 123.526512,
+   "map_px": [
+    633,
+    886
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "金栎园社区",
+   "legend_no": 93,
+   "type": "宿舍社区",
+   "aliases": [
+    "金栎园"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.624285,
+   "lng": 123.525118,
+   "map_px": [
+    463,
+    592
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "紫薇园社区",
+   "legend_no": 92,
+   "type": "宿舍社区",
+   "aliases": [
+    "紫薇园"
+   ],
+   "zone": "西校区",
+   "zone_source": "official",
+   "lat": 41.624163,
+   "lng": 123.52469,
+   "map_px": [
+    404,
+    595
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "玫瑰园社区",
+   "legend_no": 45,
+   "type": "宿舍社区",
+   "aliases": [
+    "玫瑰园"
+   ],
+   "zone": "南校区",
+   "zone_source": "inferred",
+   "lat": 41.61855,
+   "lng": 123.52895,
+   "map_px": [
+    941,
+    1254
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "百荷园社区",
+   "legend_no": 57,
+   "type": "宿舍社区",
+   "aliases": [
+    "百荷园"
+   ],
+   "zone": "南校区",
+   "zone_source": "official",
+   "lat": 41.619088,
+   "lng": 123.531004,
+   "map_px": [
+    1224,
+    1244
+   ],
+   "coord_status": "待核实（由地图像素换算估算，误差约40–100米）",
+   "area": "",
+   "neighbors": [],
+   "is_core_building": false
+  },
+  {
+   "name": "芙蓉餐厅",
+   "legend_no": null,
+   "type": "餐厅",
+   "aliases": [],
+   "zone": "南校区",
+   "zone_source": "official",
+   "lat": 41.61981,
+   "lng": 123.53302,
+   "map_px": [
+    1514,
+    1145
+   ],
+   "coord_status": "待核实（取所在建筑位置）",
+   "area": "位于南楼内",
+   "neighbors": [
+    "南楼"
+   ],
+   "is_core_building": false
+  },
+  {
+   "name": "百荷咖啡",
+   "legend_no": null,
+   "type": "咖啡",
+   "aliases": [],
+   "zone": "南校区",
+   "zone_source": "official",
+   "lat": 41.61981,
+   "lng": 123.53302,
+   "map_px": [
+    1514,
+    1145
+   ],
+   "coord_status": "待核实（取所在建筑位置）",
+   "area": "位于南楼内",
+   "neighbors": [
+    "南楼"
+   ],
+   "is_core_building": false
+  },
+  {
+   "name": "百荷园餐厅",
+   "legend_no": null,
+   "type": "餐厅",
+   "aliases": [],
+   "zone": "南校区",
+   "zone_source": "official",
+   "lat": 41.619088,
+   "lng": 123.531004,
+   "map_px": [
+    1224,
+    1244
+   ],
+   "coord_status": "待核实（取所在建筑位置）",
+   "area": "位于百荷园社区（具体位置待核实；可能即 OSM 标注的“三期食堂”）",
+   "neighbors": [
+    "百荷园社区"
+   ],
+   "is_core_building": false
+  },
+  {
+   "name": "凤凰餐厅",
+   "legend_no": null,
+   "type": "餐厅",
+   "aliases": [],
+   "zone": "北校区",
+   "zone_source": "official",
+   "lat": 41.625597,
+   "lng": 123.530511,
+   "map_px": [
+    1205,
+    576
+   ],
+   "coord_status": "待核实（取所在建筑位置）",
+   "area": "位于梧桐园社区内（具体位置待核实）",
+   "neighbors": [
+    "梧桐园社区"
+   ],
+   "is_core_building": false
+  }
+ ]
+}

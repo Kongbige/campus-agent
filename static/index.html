@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>城院小助手 · 校园服务智能体</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">城</div>
+    <div>
+      <div class="title">城院小助手</div>
+      <div class="subtitle">沈阳城市学院 · 校园服务智能体</div>
+    </div>
+  </div>
+  <div class="top-right">
+    <span id="modeBadge" class="badge">连接中…</span>
+    <button id="sideToggle" class="icon-btn" title="我的面板">☰</button>
+  </div>
+</header>
+
+<div class="layout">
+  <main class="chat">
+    <div id="messages" class="messages"></div>
+    <div class="chips" id="chips"></div>
+    <form id="form" class="composer">
+      <textarea id="input" rows="1" placeholder="问我：明天有什么课？从建工楼到医科楼怎么走？" autocomplete="off"></textarea>
+      <button type="submit" id="sendBtn">发送</button>
+    </form>
+  </main>
+
+  <aside id="side" class="side">
+    <section class="card">
+      <h3>📅 今日课表 <small id="todayLabel"></small></h3>
+      <div id="todayCourses" class="mini">加载中…</div>
+    </section>
+    <section class="card">
+      <h3>📝 我的待办</h3>
+      <div id="myReminders" class="mini">暂无</div>
+    </section>
+    <section class="card">
+      <h3>🔧 我的报修</h3>
+      <div id="myTickets" class="mini">暂无</div>
+    </section>
+    <section class="card">
+      <h3>🧰 智能体工具箱</h3>
+      <div id="toolList" class="tools"></div>
+    </section>
+    <button id="resetBtn" class="ghost">开始新对话</button>
+    <p class="disclaimer">本作品为参赛原型，课表、活动、地图位置等均为<b>示例数据</b>，以学校官方信息为准。</p>
+  </aside>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
