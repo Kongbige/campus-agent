@@ -69,7 +69,21 @@ def extract_periods(text: str) -> str | None:
 
 def extract_dorm(text: str) -> tuple[str | None, str | None]:
     b = DORM_RE.search(text)
-    building = f"{b.group(1)}号公寓" if b else None
+    if b:
+        raw = b.group(0).replace(" ", "")
+        num = b.group(1)
+        if "号楼" in raw or (raw.endswith("楼") and "宿舍楼" not in raw):
+            building = f"{num}号楼"
+        elif "宿舍楼" in raw:
+            building = f"{num}号公寓"
+        elif raw.endswith("栋"):
+            building = f"{num}栋"
+        elif raw.endswith("舍") and "宿舍" not in raw:
+            building = f"{num}舍"
+        else:
+            building = f"{num}号公寓"
+    else:
+        building = None
     rest = text[b.end():] if b else text
     r = ROOM_RE.search(rest) or ROOM_RE.search(text)
     room = r.group(1) if r else None
@@ -176,7 +190,7 @@ def plan(message: str, state: dict) -> Plan:
     if _has(text, ["工单", "报修进度", "报修状态", "修好了吗", "报修记录", "我的报修"]):
         m = re.search(r"BX\d+", text)
         p.add("query_repair_tickets", {"ticket_no": m.group(0)} if m else {}, "查询报修工单")
-    elif _has(text, ["报修", "坏了", "坏掉", "漏水", "不亮", "堵了", "没网", "断网", "断电", "跳闸", "暖气不热", "打不开", "修一下"]):
+    elif _has(text, ["报修", "坏了", "坏掉", "漏水", "不亮", "堵了", "没网", "断网", "网断", "断电", "跳闸", "暖气不热", "打不开", "修一下", "修一修", "没法上网", "上不了网"]):
         b, r = extract_dorm(text)
         dorm = state.get("dorm", {})
         slots = {"building": b or dorm.get("building"), "room": r or dorm.get("room"), "description": text}
@@ -251,7 +265,7 @@ def plan(message: str, state: dict) -> Plan:
     if _has(text, ["校车", "班车", "公交", "地铁", "怎么来学校", "怎么到学校", "学校地址", "学校在哪", "坐车", "交通"]):
         p.add("transport_info", {}, "查询交通出行信息")
     canteen_places = [b for b in bs if "食堂" in find_place(b)["type"] or "餐" in find_place(b)["type"] or "咖啡" in find_place(b)["type"]]
-    if _has(text, ["食堂", "吃饭", "饭点", "早餐", "午饭", "晚饭", "夜宵", "餐厅", "开饭", "营业"]) or (canteen_places and _has(text, ["几点", "吃", "开门"])):
+    if _has(text, ["食堂", "吃饭", "饭点", "早餐", "早饭", "午饭", "中饭", "晚饭", "夜宵", "餐厅", "开饭", "营业", "早饭几点", "早饭到"]) or (canteen_places and _has(text, ["几点", "吃", "开门"])):
         if not any(s["tool"] in ("plan_route", "locate_building") for s in p.steps):
             p.add("canteen_info", {"name": canteen_places[0] if canteen_places else None}, "查询食堂信息")
 
@@ -278,8 +292,8 @@ def plan(message: str, state: dict) -> Plan:
         p.add("search_events", {"tag": None if kw else tag, "keyword": kw, "days": days}, "搜索近期活动")
 
     # 8. 知识库：规章流程类
-    kb_words = ["图书馆", "借书", "借阅", "续借", "座位", "选课", "退课", "补选", "重修", "校园卡", "饭卡", "挂失", "补办", "充值",
-                "门禁", "晚归", "大功率", "电器", "暖气", "奖学金", "助学金", "请假", "销假", "场地借用", "借场地", "研讨室", "怎么办", "流程", "规定"]
+    kb_words = ["图书馆", "借书", "借阅", "续借", "借几本", "能借", "座位", "选课", "退课", "补选", "重修", "校园卡", "饭卡", "挂失", "补办", "充值",
+                "门禁", "晚归", "锁门", "关门", "大功率", "电器", "暖气", "奖学金", "助学金", "请假", "销假", "场地借用", "借场地", "研讨室", "怎么办", "流程", "规定"]
     navigating = any(s["tool"] in ("locate_building", "plan_route") for s in p.steps)  # 问位置时不再检索规章
     if not reminding and not navigating and _has(text, kb_words) and not any(s["tool"] in ("create_repair_ticket",) for s in p.steps):
         p.add("search_knowledge", {"query": text}, "检索校园知识库")
