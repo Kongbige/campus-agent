@@ -104,7 +104,7 @@ campus-agent/
 ├── static/                 # 前端单页（HTML/CSS/JS）
 ├── eval/                   # 效果评估脚本与用例
 ├── tests/                  # pytest 测试
-└── docs/                   # 设计文档、演示视频脚本、答辩提纲、团队分工、截图
+└── docs/                   # 界面截图
 ```
 
 ## ⚠️ 关于数据（重要）
@@ -124,18 +124,9 @@ campus-agent/
 
 **团队待办**：实地核实“待核实”坐标与楼间真实步行路线（编辑 `scripts/build_campus_map.py` 或直接编辑 `data/campus_map.json`），并替换 `schedule.json`、`classrooms.json`、`events.json`、`canteens.json` 与 `data/knowledge/*.md` 中的示例内容。修改后重启即可生效，无需改代码。
 
-## 📄 文档
-
-- [设计文档](docs/设计文档.md)（[Word 版](docs/设计文档.docx)）
-- [演示视频脚本](docs/演示视频脚本.md)
-- [答辩提纲（8 分钟）](docs/答辩提纲.md)
-- [团队分工与进度计划](docs/团队分工与进度计划.md)：3 人分工；**11 月 13 日前**完成报名（报名表命名：`2026年计算机应用大赛-第一作者姓名-作品名称-01`），**12 月 1 日前**提交作品。
-
 ## 🛠️ 辅助脚本（可选）
 
 ```bash
 python scripts/build_campus_map.py          # 核实坐标后，重新生成 data/campus_map.json
-pip install playwright pypandoc_binary && playwright install chromium
-python scripts/take_screenshots.py          # 服务运行时，为文档截图
-python scripts/build_docx.py                # 设计文档.md → 设计文档.docx（含架构图）
+python scripts/take_screenshots.py          # 服务运行时，为 README 截图
 ```
